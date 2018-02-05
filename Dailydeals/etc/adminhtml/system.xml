@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="dailydeals" translate="label" sortOrder="450">
+            <label>DAILY DEALS</label>
+        </tab>
+        <section id="deals" translate="label" sortOrder="300" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Dailydeals</label>
+            <class>separator-top</class>
+            <tab>magestore</tab>
+            <resource>Magestore_Dailydeals::config_dailydeals</resource>
+            <group id="main" translate="label" sortOrder="1" type="text" showInDefault="1" showInWebsite="1">
+                <label>Main Configuration</label>
+                <field id="active" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Daily Deals</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_toplink" translate="label" sortOrder="2" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show in Header Links</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="remain_quantity" translate="label" sortOrder="3" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show remaining quantity</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_countdown" translate="label" sortOrder="4" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show countdown timer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="message" translate="label" sortOrder="5" type="textarea" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>No deals message</label>
+                    <comment>This message will appear in case the product quantity or the countdown reaches 0 and there is no new deal scheduled.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="deal_page" translate="label" sortOrder="2" type="text" showInDefault="1" showInWebsite="1">
+                <label>Daily Deal Page</label>
+                <field id="title" translate="label" sortOrder="1" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Page Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="description" translate="label" sortOrder="2" type="textarea" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="top_sell" translate="label" sortOrder="3" type="text" showInDefault="1" showInWebsite="1">
+                <label>Top Selling Deal Block Configuration</label>
+                <field id="top_show" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="top_title" translate="label" sortOrder="2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Block Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="top_sidebar" translate="label" sortOrder="3" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sidebar</label>
+                    <source_model>Magestore\Dailydeals\Model\System\Config\Position</source_model>
+                </field>
+            </group>
+            <!--
+            <group id="" translate="label" sortOrder="" type="text" showInDefault="1" showInWebsite="1">
+                <label></label>
+                <field id="" translate="label" sortOrder="" type="" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label></label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            -->
+            <group id="random_cofig" translate="label" sortOrder="4" type="text" showInDefault="1" showInWebsite="1">
+                <label>Random Deal Block Configuration</label>
+                <field id="random_show" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="random_title" translate="label" sortOrder="2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Block Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="random_sidebar" translate="label" sortOrder="3" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sidebar</label>
+                    <source_model>Magestore\Dailydeals\Model\System\Config\Position</source_model>
+                </field>
+            </group>
+
+            <group id="most_cofig" translate="label" sortOrder="5" type="text" showInDefault="1" showInWebsite="1">
+                <label>Most Viewed Deals Block Configuration</label>
+                <field id="most_show" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="most_title" translate="label" sortOrder="2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Block Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="most_sidebar" translate="label" sortOrder="3" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sidebar</label>
+                    <source_model>Magestore\Dailydeals\Model\System\Config\Position</source_model>
+                </field>
+            </group>
+
+            <group id="upcome_cofig" translate="label" sortOrder="6" type="text" showInDefault="1" showInWebsite="1">
+                <label>Upcoming Deal Block Configuration</label>
+                <field id="upcome_show" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="upcome_date" translate="label" sortOrder="2" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Deal Start Date</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="upcome_title" translate="label" sortOrder="3" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Block Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="upcome_sidebar" translate="label" sortOrder="4" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sidebar</label>
+                    <source_model>Magestore\Dailydeals\Model\System\Config\Position</source_model>
+                </field>
+            </group>
+
+            <group id="countdown" translate="label" sortOrder="7" type="text" showInDefault="1" showInWebsite="1">
+                <label>Countdown configuration</label>
+                <field id="textcolor" translate="label" sortOrder="10" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Countdown timer text color</label>
+                    <comment><![CDATA[Background color]]></comment>
+                    <frontend_model>Magestore\Dailydeals\Block\Color</frontend_model>
+                </field>
+            </group>
+            <group id="my_color_group" translate="label" sortOrder="8" type="text" showInDefault="1" showInWebsite="1">
+            <field id="my_color_option" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Background Color</label>
+                <comment><![CDATA[Background color]]></comment>
+                <frontend_model>Magestore\Dailydeals\Block\Color</frontend_model> <!-- Our block for attaching color picker to text box -->
+            </field>
+        </group>
+        </section>
+    </system>
+</config>

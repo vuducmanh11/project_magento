@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magestore_Dailydeals::dailydeals" title="Dailydeals" module="Magestore_Dailydeals"
+             sortOrder="40" resource="Magestore_Dailydeals::dailydeals"/>
+        <add id="Magestore_Dailydeals::dailydealmanage" title="Dailydeals" module="Magestore_Dailydeals"
+             sortOrder="1" parent="Magestore_Dailydeals::dailydeals" action="dailydeals/deals/index"
+             resource="Magestore_Dailydeals::dailydealmanage"/>
+
+        <add id="Magestore_Dailydeals::setting"
+             resource="Magestore_Dailydeals::setting"
+             module="Magestore_Dailydeals" title="Settings" sortOrder="5"
+             action="adminhtml/system_config/edit/section/dailydeals"
+             parent="Magestore_Dailydeals::dailydeals"/>
+    </menu>
+</config>

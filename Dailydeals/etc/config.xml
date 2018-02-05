@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <deals>
+            <main>
+                <active>1</active>
+                <enable_toplink>0</enable_toplink>
+                <remain_quantity>0</remain_quantity>
+                <enable_countdown>1</enable_countdown>
+                <message>There are no deals.Try again later</message>
+            </main>
+            <deal_page>
+            </deal_page>
+            <top_sell>
+                <top_show>0</top_show>
+                <top_title>Top Selling</top_title>
+                <top_sidebar>1</top_sidebar>
+            </top_sell>
+            <random_config>
+                <random_show>1</random_show>
+                <random_title>Daily Deal</random_title>
+                <random_sidebar>1</random_sidebar>
+            </random_config>
+            <most_config>
+                <most_show>1</most_show>
+                <most_title>Most Viewed Deal</most_title>
+                <most_sidebar>1</most_sidebar>
+            </most_config>
+            <upcome_config>
+                <upcome_show>1</upcome_show>
+                <upcome_date>1</upcome_date>
+                <upcome_title>Upcoming Deal</upcome_title>
+                <upcome_sidebar>1</upcome_sidebar>
+            </upcome_config>
+        </deals>
+    </default>
+</config>
